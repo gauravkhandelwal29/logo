@@ -4,7 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logo</title>
-    <link rel="stylesheet" href="style8.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#main{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    margin: 60px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+#yellow{
+    background-color: yellow;
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
+}
+#red{
+    background-color: red;
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+}
+.medium{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+#yellow #mediumr{
+    background-color: red;
+    position: absolute;
+    right: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#yellow #mediumy{
+    background-color: yellow;
+    position: absolute;
+    bottom:0%;
+    right: 25%;
+}
+.midmid{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#smallyellow{
+    background-color: yellow;
+    z-index: 2;
+}
+#smallred{
+    background-color: red;
+    top: 133%;
+    z-index: 2;
+}
+    </style>
 </head>
 <body>
     <div id="main">
