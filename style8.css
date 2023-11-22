@@ -3,15 +3,22 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    width: 100vw;
+    height: 100vw;
+}
+
 #main{
-    height: 500px;
-    width: 500px;
+    height: 50%;
+    width: 50%;
     display: flex;
     margin: 60px auto;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    transition-duration: 5s;
+    animation: rotate360 infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
 #yellow{
     background-color: yellow;
@@ -63,10 +70,17 @@
     top: 133%;
     z-index: 2;
 }
-#main:hover{
-    transform: rotate(360deg);
+@keyframes rotate360{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
 }
-body{
-    width: 100vw;
-    height: 100vh;
+#main:hover #smallyellow{
+    top: 70%;
+}
+#main:hover #smallred{
+    top:100%
 }
