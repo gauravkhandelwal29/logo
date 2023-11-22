@@ -11,6 +11,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    transition-duration: 5s;
 }
 #yellow{
     background-color: yellow;
@@ -61,4 +62,11 @@
     background-color: red;
     top: 133%;
     z-index: 2;
+}
+#main:hover{
+    transform: rotate(360deg);
+}
+body{
+    width: 100vw;
+    height: 100vh;
 }
